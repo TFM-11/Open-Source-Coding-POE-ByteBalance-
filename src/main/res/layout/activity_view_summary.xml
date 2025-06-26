@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewSummaryLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_back_arrow"
+        android:contentDescription="Back"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Summary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Instruction Text: Guide the user to select a month -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a month to view your budget goals for that period."
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Month Select Button -->
+    <Button
+        android:id="@+id/btnSelectMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Month"
+        android:textSize="16sp"
+        android:background="@drawable/button_green"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Contextual Text for Date Range Selection -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a date range to filter the expenses you want to view."
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Date Range Filter -->
+    <TextView
+        android:id="@+id/btnSelectDateRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date Range"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/button_green"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Display selected range -->
+    <TextView
+        android:id="@+id/tvDateRange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No range selected"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="24dp" />
+
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSummary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

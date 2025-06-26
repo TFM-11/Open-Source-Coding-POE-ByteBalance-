@@ -1,0 +1,12 @@
+<resources>
+    <color name="primaryGreen">#43A047</color> <!-- Vibrant Green -->
+    <color name="darkGreen">#2E7D32</color> <!-- Darker Green for Press Effect -->
+    <color name="lightGreen">#A5D6A7</color> <!-- Soft Green -->
+    <color name="backgroundGradientStart">#E8F5E9</color> <!-- Light Greenish Background -->
+    <color name="backgroundGradientEnd">#C8E6C9</color> <!-- Slightly Darker -->
+    <color name="textColorPrimary">#212121</color> <!-- Dark Gray -->
+    <color name="textColorSecondary">#757575</color> <!-- Lighter Gray -->
+    <color name="white">#FFFFFF</color> <!-- Pure White -->
+    <color name="red_primary">#FF0000</color>
+</resources>
+
